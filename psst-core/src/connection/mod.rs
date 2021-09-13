@@ -284,6 +284,7 @@ fn make_packet(prefix: &[u8], data: &[u8]) -> Vec<u8> {
 fn client_hello(public_key: Vec<u8>, nonce: Vec<u8>) -> Vec<u8> {
     use crate::protocol::keyexchange::*;
 
+    // Will it work?
     let hello = ClientHello {
         build_info: BuildInfo {
             platform: Platform::PLATFORM_LINUX_X86,
